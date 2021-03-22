@@ -1,0 +1,32 @@
+﻿@model VoteSystemWeb.Models.LoginModelDTO
+@{
+    ViewData["Title"] = "Login Page";
+}
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel=" stylesheet" href="~/css/Loginstyle.css" >
+    </head>
+
+
+    <body>
+        <div class="welcomecontainer">
+            <span class= "text1">Welcome in</span>
+            <span class = "text2">Democracy</span>
+        </div>
+        <div class=" = logindiv">
+            <div class="imgcontainer">
+                <img src="~/pictures/profile.png" alt="Avatar" class="avatar">
+            </div>
+
+            <form autocomplete="off">
+                <label for="uname"><b>Username</b></label><p>
+                <input type="text" name=" username" placeholder="Username" required><p>
+                <label for="psw"><b>Password</b></label><p>
+                <input type="password" name="password" placeholder="Password" required><p>
+            </form>
+            <button type="submit" class ="Loginbutton" >Login</button>
+        </div>
+    </body>
+</html>
